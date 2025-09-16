@@ -1,9 +1,10 @@
 import React from "react";
-import { Button } from "./ui/button";
-import DrawerVault from "./Drawer";
+import { Button } from "../../components/ui/button";
+import DrawerVault from "../../components/Drawer";
 import Image from "next/image";
 import { RiShoppingCart2Line } from "react-icons/ri";
 import SearchBar from "@/app/Search/SearchBar";
+import SlidingMenus from "./SlidingMenus";
 
 const Navbar = () => {
   return (
@@ -26,6 +27,7 @@ const Navbar = () => {
         </div>
       </div>
       <SearchBar />
+      <SlidingMenus />
     </>
   );
 };

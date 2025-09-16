@@ -44,7 +44,7 @@ export const booksByCategory = {
   "বিজ্ঞান ও প্রযুক্তি": scienceBooks,
   "ইতিহাস ও ঐতিহ্য": historyBooks,
   "শিশুতোষ বই": childrenBooks,
-  কবিতা: poetryBooks,
+  "কবিতা": poetryBooks,
   "একাডেমিক বই": academicBooks,
   "ব্যবসা ও অর্থনীতি": businessBooks,
 };
