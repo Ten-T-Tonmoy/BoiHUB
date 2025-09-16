@@ -18,7 +18,7 @@ const DrawerVault = () => {
       <Drawer direction="left">
         <DrawerTrigger
           className="text-4xl cursor-pointer ml-4
-         text-primary bg-primary/10 rounded-[4px] p-1"
+         text-primary bg-primary-foreground rounded-[4px] p-1"
         >
           <RiMenu3Line className="text-3xl" />
         </DrawerTrigger>
