@@ -20,7 +20,7 @@ const CategoryCarousel = () => {
   const booksCateg = booksByCategory;
   return (
     <div
-      className="flex overflow-x-scroll border-b border-border p-4 bg-background
+      className="flex overflow-x-scroll border-b border-border p-4 
     overflow-y-hidden scrollbar-hide gap-4"
     >
       {Object.entries(booksCateg).map(([category, books]) => (

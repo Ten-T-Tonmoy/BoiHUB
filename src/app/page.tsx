@@ -64,7 +64,7 @@ const HomePage = () => {
         flex-col items-center justify-center rounded-lg h-40 w-full"
         >
           <Link href={"/login"}>
-            <Button variant={"destructive"}>Login</Button>
+            <Button variant={"outline"}>Login</Button>
           </Link>
           <Link href={"/signup"}>
             <Button className="bg-violet-400 hover:bg-violet-400/85">
@@ -86,27 +86,27 @@ const HomePage = () => {
           {count}
         </h1>
         <div
-          className="bg-primary flex gap-2
+          className="border border-border bg-card flex gap-2
          items-center justify-center rounded-lg h-20 w-full"
         >
           <Button
             onClick={decrease}
             variant={"secondary"}
-            className="text-destructive font-black"
+            className="text-destructive font-bold border border-border"
           >
             {"<<"} LOW
           </Button>
           <Button
             onClick={reset}
             variant={"secondary"}
-            className="text-yellow-500 font-black"
+            className="text-yellow-500 font-bold border border-border"
           >
-            Reset
+            RESET
           </Button>
           <Button
             onClick={increase}
             variant={"secondary"}
-            className="text-green-500 font-black"
+            className="text-green-500 font-bold border border-border"
           >
             UP {">>"}
           </Button>

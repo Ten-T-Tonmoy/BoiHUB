@@ -18,7 +18,7 @@ const Navbar = () => {
             className="text-4xl cursor-pointer
           mr-4 text-primary bg-primary-foreground rounded-[4px] p-1"
           />
-          <Image src={"/logo.png"} height={140} width={140} />
+          <Image alt="logo" src={"/logo.png"} height={140} width={140} />
         </div>
 
         <div className="flex  items-center justify-center">

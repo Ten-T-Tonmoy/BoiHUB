@@ -50,7 +50,7 @@ const SearchBar = () => {
   }, [charIdx, deleting, wordIdx]);
 
   return (
-    <div className="w-full p-4 border-border border-b">
+    <div className="w-full p-4 border-border bg-background border-b">
       <div className="w-full relative ">
         <Input
           placeholder={shownText}

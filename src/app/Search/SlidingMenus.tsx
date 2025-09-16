@@ -26,11 +26,11 @@ const SlidingMenus = () => {
   return (
     <div
       className="flex overflow-x-scroll border-b border-border p-2
-    overflow-y-hidden scrollbar-hide gap-4 text-black/50 bg-background"
+    overflow-y-hidden scrollbar-hide gap-4 text-black/50"
     >
       {Object.values(categories).map((category, idx) => (
         <div
-          className={`flex-shrink-0 cursor-pointer
+          className={`flex-shrink-0 cursor-pointer bg-background
         rounded-full border border-border p-2  transition-all duration-200 ease-in-out
         ${
           selected === category
