@@ -15,12 +15,13 @@ interface BooksState {
 }
 
 // create takes set,get
-export const useCounterStore = create<BooksState>()(
+export const useBookStore = create<BooksState>()(
   persist(
     //get isnt much used
     (set, get) => ({
       totalBooks: allBooks,
       favouriteBooks: [],
+
       addToFavourite: (bookId) => {
         const allOfThem = Object.values(get().totalBooks).flat();
         const book = allOfThem.find((el) => el.id === bookId);
@@ -33,8 +34,9 @@ export const useCounterStore = create<BooksState>()(
         }
       },
 
-      getBookByWriter: (writerId) => {
-        const all = Object.values(get().totalbooks).flat();
+      getBooksByWriter: (writerId) => {
+        const all = Object.values(get().totalBooks).flat();
+        return all.filter((el) => el.writerId === writerId);
       },
 
       getBooksByCategory: (category) => get().totalBooks[category],

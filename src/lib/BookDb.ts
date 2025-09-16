@@ -86,7 +86,7 @@ export const selfDevelopmentBooks: BookItem[] = [
     id: 12,
     name: "জীবন যেখানে যেমন",
     bookCover:
-      "https://ds.rokomari.store/rokomari110/ProductNew20190903/130X186/Jibon_Jekhane_Jemon-Humayun_Ahmed-d8325-454485.jpg",
+      "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/9aa729284_212665.jpg",
     subDescription: "জীবনের সহজ সত্যগুলো আবিষ্কারের গল্প",
     writer: "হুমায়ূন আহমেদ",
     writerId: 101,
@@ -98,7 +98,7 @@ export const selfDevelopmentBooks: BookItem[] = [
     favouritedBy: 287,
     about: {
       aboutImgUrl:
-        "https://ds.rokomari.store/rokomari110/ProductNew20190903/130X186/Jibon_Jekhane_Jemon-Humayun_Ahmed-d8325-454485.jpg",
+        "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/9aa729284_212665.jpg",
       summary: `জীবনের প্রতিটি ক্ষেত্রে আমরা কিছু সিদ্ধান্ত নিই, কিছু পছন্দ করি। এই বইয়ে লেখক জীবনের এমনই কিছু গুরুত্বপূর্ণ মুহূর্তের কথা বলেছেন যা আমাদের ভবিষ্যৎ নির্ধারণ করে।`,
     },
     publishedAt: "15 March 2018",
@@ -557,7 +557,7 @@ export const poetryBooks: BookItem[] = [
       "https://ds.rokomari.store/rokomari110/ProductNew20190903/130X186/Gitanjali-Rabindranath_Tagore-d8325-454514.jpg",
     subDescription: "রবীন্দ্রনাথের অমর কাব্যগ্রন্থ",
     writer: "রবীন্দ্রনাথ ঠাকুর",
-    writerId: 001,
+    writerId: 1,
     category: "কবিতা",
     ratings: {
       numberOfRating: 10,
@@ -629,7 +629,7 @@ export const poetryBooks: BookItem[] = [
       "https://ds.rokomari.store/rokomari110/ProductNew20190903/130X186/Amar_Sonar_Bangla-d8325-454517.jpg",
     subDescription: "জাতীয় সংগীতসহ রবীন্দ্রনাথের দেশাত্মবোধক কবিতা",
     writer: "রবীন্দ্রনাথ ঠাকুর",
-    writerId: 001,
+    writerId: 1,
     category: "কবিতা",
     ratings: {
       numberOfRating: 10,
