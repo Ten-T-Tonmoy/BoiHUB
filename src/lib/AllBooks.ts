@@ -12,18 +12,29 @@ import {
 
 import { BookItem } from "./Interfaces/Books.Interface";
 
+interface AllBooks {
+  selfDevelopmentBooks: BookItem[];
+  literatureBooks: BookItem[];
+  islamicBooks: BookItem[];
+  scienceBooks: BookItem[];
+  historyBooks: BookItem[];
+  childrenBooks: BookItem[];
+  poetryBooks: BookItem[];
+  academicBooks: BookItem[];
+  businessBooks: BookItem[];
+}
 // Combining all books
-export const allBooks: BookItem[] = [
-  ...selfDevelopmentBooks,
-  ...literatureBooks,
-  ...islamicBooks,
-  ...scienceBooks,
-  ...historyBooks,
-  ...childrenBooks,
-  ...poetryBooks,
-  ...academicBooks,
-  ...businessBooks,
-];
+export const allBooks: AllBooks = {
+  selfDevelopmentBooks,
+  literatureBooks,
+  islamicBooks,
+  scienceBooks,
+  historyBooks,
+  childrenBooks,
+  poetryBooks,
+  academicBooks,
+  businessBooks,
+};
 
 // Books by category
 export const booksByCategory = {
