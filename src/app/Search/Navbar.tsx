@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "../../components/ui/button";
-import DrawerVault from "../../components/Drawer";
+import DrawerVault from "./Drawer";
 import Image from "next/image";
 import { RiShoppingCart2Line } from "react-icons/ri";
 import SearchBar from "@/app/Search/SearchBar";
