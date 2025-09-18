@@ -5,18 +5,9 @@ import { BookItem } from "@/lib/Interfaces/Books.Interface";
 import Image from "next/image";
 import { booksByCategory } from "@/lib/AllBooks";
 import { Button } from "@/components/ui/button";
+import { getRandomCover } from "./GetRandomCover";
 
 const CategoryCarousel = () => {
-  const placeholders = [
-    "/coverholder/cover1.png",
-    "/coverholder/cover2.png",
-    "/coverholder/cover3.png",
-  ];
-
-  function getRandomCover() {
-    const idx = Math.floor(Math.random() * placeholders.length);
-    return placeholders[idx];
-  }
   const booksCateg = booksByCategory;
   return (
     <div
