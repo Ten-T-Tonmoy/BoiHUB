@@ -1,47 +1,5 @@
 import { BookItem } from "./Interfaces/Books.Interface";
 
-// Writers database
-export const writers = [
-  { id: 1, name: "রবীন্দ্রনাথ ঠাকুর", totalBooks: 2 },
-  { id: 101, name: "হুমায়ূন আহমেদ", totalBooks: 4 },
-  { id: 125, name: "ড. মুহাম্মদ জাফর ইকবাল", totalBooks: 1 },
-  { id: 157, name: "মানিক বন্দ্যোপাধ্যায়", totalBooks: 1 },
-  { id: 178, name: "কাজী আনোয়ার হোসেন", totalBooks: 1 },
-  { id: 205, name: "বুদ্ধদেব গুহ", totalBooks: 1 },
-  { id: 245, name: "শাফী শাওন", totalBooks: 1 },
-  { id: 302, name: "স্টিফেন আর কভি", totalBooks: 1 },
-  { id: 401, name: "মাওলানা মুহিউদ্দীন খান", totalBooks: 1 },
-  { id: 402, name: "ইমাম নববী", totalBooks: 1 },
-  { id: 403, name: "আল্লামা শিবলী নোমানী", totalBooks: 1 },
-  { id: 404, name: "ইমাম ইবনে কাছীর", totalBooks: 1 },
-  { id: 405, name: "মাওলানা আশরাফ আলী থানভী", totalBooks: 1 },
-  { id: 501, name: "কার্ল সেগান", totalBooks: 1 },
-  { id: 502, name: "ড. আব্দুল্লাহ আল মুতী শরফুদ্দীন", totalBooks: 1 },
-  { id: 503, name: "তামিম শাহরিয়ার সুবীন", totalBooks: 1 },
-  { id: 504, name: "ড. দীপেন ভট্টাচার্য", totalBooks: 1 },
-  { id: 505, name: "প্রফেসর আবু হাসান শাহরিয়ার", totalBooks: 1 },
-  { id: 601, name: "ড. গোলাম ওয়াহেদ চৌধুরী", totalBooks: 1 },
-  { id: 602, name: "প্রফেসর সিরাজুল ইসলাম চৌধুরী", totalBooks: 1 },
-  { id: 603, name: "ড. এ কে এম শাহনাওয়াজ", totalBooks: 1 },
-  { id: 604, name: "আবুল মনসুর আহমদ", totalBooks: 1 },
-  { id: 605, name: "শেখ মুজিবুর রহমান (আত্মজীবনী)", totalBooks: 1 },
-  { id: 701, name: "জগদীশচন্দ্র বসু", totalBooks: 1 },
-  { id: 702, name: "শিশু সাহিত্যিক ফরিদা খান", totalBooks: 1 },
-  { id: 703, name: "লীলা মজুমদার", totalBooks: 1 },
-  { id: 704, name: "আকবর আলী খান", totalBooks: 1 },
-  { id: 801, name: "কাজী নজরুল ইসলাম", totalBooks: 2 },
-  { id: 802, name: "জীবনানন্দ দাশ", totalBooks: 1 },
-  { id: 901, name: "ড. সরদার আবুল কাশেম", totalBooks: 1 },
-  { id: 902, name: "ড. হায়াত মামুদ", totalBooks: 1 },
-  { id: 903, name: "প্রফেসর শাজাহান তাপাদার", totalBooks: 1 },
-  { id: 904, name: "ড. মোহাম্মদ আজিজুর রহমান", totalBooks: 1 },
-  { id: 905, name: "প্রফেসর আব্দুস সাত্তার", totalBooks: 1 },
-  { id: 1001, name: "এনায়েত করিম", totalBooks: 1 },
-  { id: 1002, name: "ড. আতিউর রহমান", totalBooks: 1 },
-  { id: 1003, name: "প্রফেসর নুরুল ইসলাম", totalBooks: 1 },
-  { id: 1004, name: "খোন্দকার ইব্রাহিম খালেদ", totalBooks: 1 },
-  { id: 1005, name: "রাগিব হাসান", totalBooks: 1 },
-];
 
 // Categories list
 export const categories = [

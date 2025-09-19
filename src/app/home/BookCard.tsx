@@ -3,10 +3,13 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { FaHeart } from "react-icons/fa";
 import { getRandomCover } from "./GetRandomCover";
+import { useRouter } from "next/navigation";
 
 const BookCard = ({ book }) => {
+  const router = useRouter();
   return (
     <div
+      onClick={() => router.push(`/book/${book.id}`)}
       className="
           flex-shrink-0 flex justify-center group gap-1 border border-border py-2
           rounded-[4px] shadow-lg

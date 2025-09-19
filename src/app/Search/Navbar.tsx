@@ -1,12 +1,14 @@
+"use client";
 import React from "react";
 import { Button } from "../../components/ui/button";
 import DrawerVault from "./Drawer";
 import Image from "next/image";
 import { RiShoppingCart2Line } from "react-icons/ri";
 import SearchBar from "@/app/Search/SearchBar";
-import SlidingMenus from "./SlidingMenus";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+  const router = useRouter();
   return (
     <>
       <div
@@ -22,12 +24,16 @@ const Navbar = () => {
         </div>
 
         <div className="flex  items-center justify-center">
-          <Button className="rounded-[3px] cursor-pointer">Sign In</Button>
+          <Button
+            onClick={() => router.push("/login")}
+            className="rounded-[3px] cursor-pointer"
+          >
+            Sign In
+          </Button>
           <DrawerVault />
         </div>
       </div>
       <SearchBar />
-      <SlidingMenus />
     </>
   );
 };

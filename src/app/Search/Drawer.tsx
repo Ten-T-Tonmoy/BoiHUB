@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   Drawer,
@@ -27,25 +28,12 @@ import { FcKindle } from "react-icons/fc";
 import { LuMapPinHouse } from "react-icons/lu";
 import { MdOutlineSmartToy } from "react-icons/md";
 import { TbDeviceLandlinePhone } from "react-icons/tb";
-
-// icon হোম
-// icon বই
-// icon ebook ই-বুক
-// Become a seller Become A Seller
-// icon ebook রকমারি কুইজPlay Quiz
-// icon ইলেক্ট্রনিক্স
-// icon কিডস জোন
-//  ঘরে বসে আয় করুন
-// icon আজকের অফার !
-// icon প্রাতিষ্ঠানিক অর্ডার
-// iconবেস্টসেলার অ্যাওয়ার্ড, ২৪
-// icon অর্ডার ট্র্যাক
-// Contact Us
-// About Us
+import { useRouter } from "next/navigation";
 
 const DrawerVault = () => {
+  const router = useRouter();
   const menuItems = [
-    { title: "হোম", icon: IoHomeOutline },
+    { title: "হোম", icon: IoHomeOutline, link: "/home" },
     { title: "বই", icon: IoBookOutline },
     { title: "ই-বুক", icon: FcKindle },
     { title: "Become A Seller", icon: IoStorefrontOutline },
@@ -70,6 +58,7 @@ const DrawerVault = () => {
         {/* ----------------------drawer element ---------------------- */}
         <DrawerContent>
           <DrawerHeader>
+            <DrawerTitle></DrawerTitle>
             <div className="flex w-full  items-center justify-between">
               <Image alt="logo" src={"/logo.png"} height={140} width={140} />
               <DrawerClose>
@@ -85,6 +74,7 @@ const DrawerVault = () => {
           <div className="flex-1 overflow-y-scroll">
             {menuItems.map((item, idx) => (
               <div
+                onClick={() => router.push(`${item.link}`)}
                 key={idx}
                 className="w-full flex justify-start items-center gap-4
             hover:bg-primary-foreground hover:text-primary pl-8 p-4 transition-all ease-in-out
