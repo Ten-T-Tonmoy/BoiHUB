@@ -288,7 +288,10 @@ const TopStrip = () => {
     },
   ];
   return (
-    <div className="w-full flex flex-wrap items-center gap-4 justify-center ">
+    <div
+      className="w-full flex py-4 flex-wrap
+     items-center gap-2 md:gap-4 justify-center "
+    >
       {items.map((item, idx) => (
         <div
           key={idx}

@@ -13,7 +13,7 @@ const Navbar = () => {
     <>
       <div
         className="flex w-full justify-between p-2 sticky top-0
-      items-center border-b border-border bg-background z-10"
+      items-center border-b border-border bg-background z-100"
       >
         <div className="flex  items-center justify-center">
           <RiShoppingCart2Line

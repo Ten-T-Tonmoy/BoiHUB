@@ -1,6 +1,5 @@
 import { BookItem } from "./Interfaces/Books.Interface";
 
-
 // Categories list
 export const categories = [
   "আত্ম উন্নয়ন ও মোটিভেশন",
